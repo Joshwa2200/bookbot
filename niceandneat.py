@@ -23,16 +23,12 @@ def main():
 
     word_count = wordcount(file_contents)
 
-    characters= list (character_counts.keys())
-
-    counts_of_characters= list (character_counts.values())
-
     sorted_characters = sorted(character_counts.items(), key=lambda item: item[1], reverse=True)
 
+    organized_characters= ""
     for char, count in sorted_characters:
-        organized_characters=(f"The '{char}' character was found {count} times")
-        return organized_characters   
+        organized_characters+= f"The '{char}' character was found {count} times\n" 
     
-    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and {organized_characters} ---End Report---")
+    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and \n\n{organized_characters} ---End Report---")
 if __name__ == "__main__":
     main()
