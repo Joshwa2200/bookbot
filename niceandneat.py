@@ -30,7 +30,8 @@ def main():
     sorted_characters = sorted(character_counts.items(), key=lambda item: item[1], reverse=True)
 
     for char, count in sorted_characters:
-        organized_characters=print(f"The '{char}' character was found {count} times")   
+        organized_characters=(f"The '{char}' character was found {count} times")
+        return organized_characters   
     
     print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and {organized_characters} ---End Report---")
 if __name__ == "__main__":
