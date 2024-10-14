@@ -22,6 +22,6 @@ def main():
 
     word_count = wordcount(file_contents)
     
-    print(f" ---Begin Report of {file_contents}--- This book contains {word_count} words. and its character count is {character_counts}. ---End Report---")
+    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words. and its character count is {character_counts}. ---End Report---")
 if __name__ == "__main__":
     main()
