@@ -27,6 +27,6 @@ def main():
 
     counts_of_characters= list (character_counts.values())
     
-    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and the letter {character} appears {counts_of_characters} times. ---End Report---")
+    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and the letter {characters} appears {counts_of_characters} times. ---End Report---")
 if __name__ == "__main__":
     main()
