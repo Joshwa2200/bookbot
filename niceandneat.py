@@ -14,6 +14,7 @@ def wordcount (frankenstein_txt):
         word_count += 1
     return (word_count)
 
+
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
@@ -21,7 +22,11 @@ def main():
     character_counts=character_count(file_contents)
 
     word_count = wordcount(file_contents)
+
+    characters= list (character_counts.keys())
+
+    counts_of_characters= list (character_counts.values())
     
-    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words. and its character count is {character_counts}. ---End Report---")
+    print(f" ---Begin Report of Frankenstein--- This book contains {word_count} words, and the letter {character} appears {counts_of_characters} times. ---End Report---")
 if __name__ == "__main__":
     main()
