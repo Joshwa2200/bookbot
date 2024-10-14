@@ -10,7 +10,7 @@ def main():
         file_contents = f.read()
 
     word_count = wordcount(file_contents)
-    print("The word count is:", word_count)
+    print(word_count)
 
 if __name__ == "__main__":
     main()
